@@ -1,0 +1,48 @@
+:root {
+  --bg: linear-gradient(
+    36.31deg,
+    #fcca13 -44.23%,
+    #fd7e5b 27.03%,
+    #ff05cd 110.21%
+  );
+  --bg-primary: linear-gradient(36.31deg, #fe4c8b 51.16%, #fd8852 110.21%);
+  --bg-secondary: linear-gradient(36.31deg, #fe4c8b -44.23%, #fd8852 110.21%);
+  --bg-search: linear-gradient(36.31deg, #fd8a50 -44.23%, #fe6375 110.21%);
+  --bg-gradient: linear-gradient(36.31deg, #dc6ef9 -44.23%, #6b0bcd 110.21%);
+  --black: #000000;
+  --blue: #6236ff;
+  --gray: #d8d8d8;
+  --white: #ffffff;
+  --smoke-white: #cccccc;
+  --red: #f00000;
+  --primary: #744ca2;
+  --secondary: #dc6ef9;
+  --black-primary: #333333;
+  --black-secondary: #666666;
+  --blue-primary: #5b7cfd;
+  --gray-primary: #f5f6f8;
+  --white-primary: #f2f2f2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+}
+
+a {
+  color: inherit;
+}

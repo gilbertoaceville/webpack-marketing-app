@@ -1,0 +1,99 @@
+/* Testimony card styles */
+
+.card_container {
+    width: 350px;
+    height: auto;
+    background: var(--white);
+    padding: 20px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 8px 8px -4px var(--smoke-white);
+    margin: 15px 0;
+}
+
+.card_container > p {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--black-secondary);
+}
+
+.card_container > p span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.card_profile {
+    display: flex;
+    margin-top: 15px;
+}
+
+.card_profile > .card_profile_img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid var(--gray);
+    background-color: var(--gray);
+    margin-right: 5px;
+}
+
+.card_profile_img > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card_profile_details > header > h4 {
+    font-size: small;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+
+.card_profile_details > p {
+    font-size: 12px;
+    color: var(--black-secondary);
+    text-transform: capitalize;
+}
+
+.card_profile_wrap { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.no_img_card {
+    display: none;
+}
+
+.card_icons_container {
+    color: var(--black-secondary);
+}
+
+.card_icons_container > span {
+    margin: 0 3px;
+}
+
+.card_icons_container > span > svg {
+    height: 15px;
+    width: 15px;
+}
+
+.card_icons_container > span > .Layer_1 {
+    height: 18px;
+    width: 18px;
+}
+
+@media(max-width: 750px) {
+    .card_container {
+        width: 250px;
+    }
+}
+
+@media(max-width: 281px) {
+    .card_container {
+        width: 225px;
+    }
+}

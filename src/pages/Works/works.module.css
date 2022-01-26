@@ -1,0 +1,127 @@
+.container {
+    background: #F5F6F8;
+}
+
+.section_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--black-primary);
+    flex-direction: column;
+    margin: 3em auto;
+    padding: 50px 0;
+}
+
+.section_header {
+    width: 30%;
+}
+
+.section_header>header>h1 {
+    font-size: 30px;
+    line-height: 46px;
+}
+
+.section_header>.section_text {
+    margin: 1em 0 0 0;
+    font-size: 14px;
+    color: var(--black-secondary);
+}
+
+.section_filter_boxes {
+    margin: 2.5em 0;
+    display: flex;
+    align-items: center;
+}
+
+.section_box,
+.section_box_active {
+    padding: 5px 15px;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 1px solid var(--smoke-white);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.section_box_active {
+    background: var(--bg);
+    border: none;
+}
+
+.section_box>p, .section_box_active>p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section_box_active>p {
+    color: var(--white);
+    font-weight: normal;
+}
+
+.section_works_wrapper {
+    display: grid;
+    grid: 1fr / repeat(3, 1fr);
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.section_works_container {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    box-shadow: 0 3px 1px var(--white);
+}
+
+.section_works_container>img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+@media(max-width: 850px) {
+    .section_header {
+        width: 90%;
+    }
+
+    .section_works_wrapper {
+        grid: 1fr / repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 800px) {
+
+    .section_header>header>h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .section_header>.section_text {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 600px) {
+    .section_works_wrapper {
+        grid: 1fr / repeat(1, 1fr);
+    }
+}
+
+@media(max-width: 500px) {
+    .section_box>p, .section_box_active > p {
+        font-size: 12px;
+    }
+
+    .section_box,
+    .section_box_active {
+        padding: 5px 10px;
+        margin-right: 5px;
+    }
+}

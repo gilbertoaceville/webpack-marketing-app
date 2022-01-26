@@ -1,0 +1,141 @@
+.home_container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  color: var(--white);
+  padding: 25px 0;
+  position: relative;
+  background: var(--bg);
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.hero_page_wrapper, .hero_page_wrapper_direction, .hero_page_wrapper_align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero_page_wrapper_align {
+  text-align: center;
+}
+
+.hero_page_wrapper_direction {
+  flex-direction: row-reverse;
+}
+
+.title_text_container > header > h1 {
+  font-size: 40px;
+}
+
+.title_text_container > header > h1 > span {
+  line-height: 60px;
+}
+
+.title_text_container > header > p {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+.btn_container, .btn_wrap {
+  margin: 3em 0 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_wrap {
+  display: block;
+}
+
+.btn_container button, .btn_wrap button {
+  padding: .8em 3em;
+}
+
+.hero_img_wrap > .hero_img_container {
+  width: 500px;
+  height: 400px;
+}
+
+.hero_img_wrap > .hero_img_container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+@media (max-width: 925px) {
+
+    .title_text_container > header > h1 {
+    font-size: 30px;
+  }
+
+  .title_text_container > header > p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .hero_img_wrap > .hero_img_container {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .home_container {
+    height: fit-content;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .hero_page_wrapper, .hero_page_wrapper_direction, .hero_page_wrapper_align {
+    padding: 30px 0;
+  }
+
+  .hero_img_wrap > .hero_img_container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .title_text_container > header > h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .title_text_container > header > h1 > span {
+    line-height: 35px;
+  }
+
+  .title_text_container > header > p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .btn_wrap {
+    display: flex;
+  }
+
+  .hero_page_wrapper, .hero_page_wrapper_direction {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .title_text_container {
+    margin-top: 35px;
+  }
+
+  .hero_img_wrap > .hero_img_container > img {
+    position: unset;
+  }
+}
+
+@media(max-width: 750px) {}

@@ -1,0 +1,112 @@
+.input_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input_container {
+  width: 356px;
+  height: 40px;
+  background: var(--white);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input_wrapper input,
+.input_wrapper .input {
+  background: transparent;
+  outline: none;
+  width: 90%;
+  height: 100%;
+  border: none;
+  color: var(--black-primary);
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input_wrapper .input {
+  border-radius: 4px;
+  width: 90%;
+  background: var(--gray-primary);
+  border: 1px solid var(--gray);
+  outline: none;
+}
+
+.input_wrapper input::placeholder,
+.input_wrapper .input::placeholder {
+  color: #999;
+  font-size: 15px;
+}
+
+.search_icon_container {
+  height: 90%;
+  width: 13%;
+  background: var(--bg-search);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.search_icon_container > svg {
+  height: 50%;
+  width: 50%;
+}
+
+.search_icon_container > svg path {
+  fill: var(--white);
+}
+
+.input_wrapper span, .input_wrapper span {
+    font-size: 13px;
+    padding: 3px;
+    color: #f00;
+    display: none;
+}
+
+.input:invalid[focused="true"], textarea:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+.input:invalid[focused="true"] ~ span, textarea:invalid[focused="true"] ~ span{
+    display: block;
+}
+
+.input_wrapper textarea {
+    text-indent: 10px;
+    border-radius: 3px;
+}
+
+.input_wrapper textarea {
+    padding: 10px;
+    width: 90%;
+    height: 100px;
+    font-size: 16px;
+    background: var(--gray-primary);
+    border: 1px solid var(--gray);
+    outline: none;
+}
+
+.input_wrapper textarea::placeholder {
+    color: #999;
+    font-size: 15px;
+}
+
+
+@media (max-width: 750px) {
+  .input_container {
+    width: 300px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .input_container {
+    width: 256px;
+    height: 35px;
+  }
+}

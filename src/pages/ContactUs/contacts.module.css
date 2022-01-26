@@ -1,0 +1,128 @@
+.form_container {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-primary);
+  position: relative;
+}
+
+.form_wrapper {
+  width: 400px;
+  height: auto;
+  padding: 25px;
+  background: var(--white);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: -40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_header {
+  width: 100%;
+}
+
+.form_header > header {
+  margin: 1em 0;
+}
+
+.form_header > header > h2 {
+  color: var(--black-primary);
+  font-size: 30px;
+}
+
+.form_header > p {
+  font-size: 14px;
+  color: var(--black-secondary);
+  line-height: 24px;
+  margin: 1.5em 0 1em 0;
+}
+
+.forms {
+  width: 100%;
+}
+
+.forms_wrap figure {
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+
+.forms_wrap figure main {
+  background: var(--gray-primary);
+  border: 1px solid var(--gray);
+}
+
+.forms_wrap figure main label input {
+  text-indent: 10px;
+  border-radius: 3px;
+}
+
+.forms_wrap figure label input::placeholder {
+  font-size: 14px;
+}
+
+.form_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.form_btn > button {
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 13px;
+  padding: 0.7em 3em;
+  background: var(--bg-search);
+}
+
+/* TOASTIFY STYLES */
+.black_background {
+  background: #fd8a50;
+  color: var(--white);
+  -webkit-box-shadow: 0 8px 8px -4px var(--black-primary);
+  box-shadow: 0 8px 8px -4px var(--black-primary);
+}
+
+.grow_font_size {
+  display: flex;
+  align-items: center;
+}
+
+.fancy_progress_bar {
+  display: none;
+}
+
+@media(max-width: 750px) {
+  .form_container {
+    position: unset;
+    height: 800px;
+  }
+  
+  .form_wrapper {
+    position: unset;
+  }
+}
+
+@media (max-width: 550px) {
+  .form_wrapper {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .form_wrapper {
+    width: 250px;
+  }
+}
+
+@media (max-width: 285px) {
+  .form_wrapper {
+    width: 220px;
+  }
+}

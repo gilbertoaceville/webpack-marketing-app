@@ -1,0 +1,49 @@
+.btn {
+    padding: .6em 2em;
+    outline: none;
+    border: none;
+    background-color: var(--white);
+    color: var(--secondary);
+    border-radius: 2px;
+    font-size: 14px;
+    box-shadow: 0 4px 4px -4px var(--black-secondary);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background: var(--bg);
+    transform: scale(1.05);
+    color: var(--white);
+    transition: .3s;
+    border-radius: 2px;
+}
+
+.btn > svg {
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.btn > svg path {
+    fill: var(--secondary);
+}
+
+.btn:hover > svg path {
+    fill: white;
+}
+
+.btn:disabled {
+    opacity: .4;
+    cursor: not-allowed
+}
+
+.btn:disabled:hover {
+    background: transparent;
+    transform: scale(1);
+    transition: unset;
+    border: none;
+    color: #f00;
+}

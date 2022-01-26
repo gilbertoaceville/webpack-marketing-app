@@ -1,0 +1,284 @@
+/* Navigation bar attributes */
+.nav_bar, .fixed_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  transition: .4s ease-in-out;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0px;
+  padding: 10px 0;
+}
+
+.fixed_nav {
+  background: var(--white);
+  box-shadow: 0 8px 8px -4px var(--black-secondary);
+  z-index: 998;
+}
+
+.brand {
+  height: 58px;
+  width: 124px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog_brand {
+  height: 50px;
+  width: 116px;
+}
+
+.brand img,
+.blog_brand img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.brand > svg,
+.blog_brand > svg  {
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.logo {
+  display: none;
+}
+
+.navigation_links,
+.blog_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation_links > i,
+.blog_links > i {
+  display: none;
+}
+
+.navigation_links > a,
+.blog_links > a, .fixed_nav a {
+  text-transform: capitalize;
+  margin: 0 10px;
+  color: var(--smoke-white);
+}
+
+.blog_links > a {
+  color: #999999;
+}
+
+.fixed_nav a {
+  color: var(--black-primary);
+}
+
+
+.navigation_links a.active,
+.blog_links a.active, .fixed_nav a.active {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.blog_links a.active {
+  color: var(--black-primary);
+}
+
+.fixed_nav a.active {
+  color: var(--black);
+}
+
+.fixed_nav .btn {
+  opacity: 0;
+}
+
+.navigation_links > a > li:hover {
+  color: var(--white);
+}
+
+.blog_links > a > li:hover, .fixed_nav a li:hover {
+  color: var(--black);
+}
+
+.delete_svg {
+  display: none;
+}
+
+.btn_menu_container {
+  display: flex;
+  align-items: center;
+}
+
+.menu_icon {
+  display: none;
+  cursor: pointer;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.menu_icon > svg {
+  height: 40px;
+  width: 40px;
+}
+
+.menu_icon > svg path {
+  fill: var(--white);
+}
+
+.nav_btn_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* video components */
+video {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  object-fit: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed_nav .svg_logo {
+  display: none;
+}
+
+.fixed_nav .logo {
+  display: block;
+  height: 70%;
+  width: 50%;
+}
+
+@media (max-width: 750px) {
+
+  .fixed_nav, .nav_bar {
+    display: grid;
+    grid: 1fr/repeat(2, 1fr);
+    justify-content: center;
+    grid-gap: 0 1em;
+  }
+
+  .brand,
+  .blog_brand {
+    height: 40px;
+    width: 106px;
+  }
+
+  .fixed_nav .logo {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .fixed_nav a  {
+    margin: 0;
+  }
+
+  video {
+    display: flex !important;
+  }
+
+  .nav_bar .navigation_links,
+  .nav_bar .blog_links, .fixed_nav .navigation_links, .fixed_nav .blog_links {
+    position: fixed;
+    background: var(--bg);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out;
+    z-index: 1000;
+    transform: translateY(100%);
+  }
+
+  .animate_links .navigation_links, .animate_links .blog_links {
+      transform: translateY(0);
+  }
+
+  .animate_links {
+    position: fixed;
+    width: 100%;
+  }
+
+  .navigation_links svg,
+  .blog_links svg {
+    display: flex;
+    color: var(--white);
+    height: 45px;
+    width: 45px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: var(--black-primary)
+  }
+
+  .navigation_links svg path,
+  .blog_links svg path {
+    fill: var(--white-primary);
+  }
+
+  .navigation_links > a > li,
+  .blog_links > a > li {
+    margin: 20px 0;
+    color: var(--black);
+    font-size: 25px;
+  }
+
+  .navigation_links a.active li,
+.blog_links a.active li{
+    text-shadow: 0 2px 1px var(--black);
+    color: var(--white);
+}
+
+.btn button {
+  font-size: 13px;
+  background-color: #f9f9f9;
+}
+
+.btn {
+  opacity: 0;
+}
+
+.delete_svg {
+  display: flex;
+}
+
+  .menu_icon {
+    display: block;
+  }
+
+  .menu_icon > svg {
+    height: 25px;
+    width: 25px;
+  }
+
+  .fixed_nav .menu_icon > svg path {
+    fill: #fd8a50;
+  }
+}
+
+@media(max-width: 281px) {
+  .btn_menu_container button {
+    font-size: 13px;
+  }
+}

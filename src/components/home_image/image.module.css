@@ -1,0 +1,268 @@
+.hero_img_container img {
+  object-fit: contain;
+}
+
+.hero_img_container {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  left: 15%;
+}
+
+.hero_img_container > .main_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: contain;
+}
+
+.hero_img_container > .person_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: contain;
+  top: 0;
+  left: 5%;
+}
+
+.hero_img_container .img_below {
+  height: 130px;
+  width: 130px;
+  position: absolute;
+}
+
+.chat_screen {
+  bottom: -10%;
+  left: 19%;
+}
+
+.hero_img_container .code {
+  bottom: 16%;
+  left: 8%;
+  width: 90px;
+  height: 50px;
+  z-index: 2;
+}
+
+.hero_img_container .tools {
+  bottom: 26%;
+  left: 12%;
+  width: 90px;
+  height: 70px;
+}
+
+.hero_img_container .curly_brackets,
+.hero_img_container .cross {
+  width: 40px;
+  height: 50px;
+  top: 35%;
+}
+
+.hero_img_container .cross {
+  top: 10%;
+  left: 26%;
+}
+
+.hero_img_container .array {
+  width: 90px;
+  height: 40px;
+  right: 0;
+  top: 10%;
+}
+
+.hero_img_container .screen {
+  width: 120px;
+  height: 120px;
+  right: 0;
+  top: 30%;
+}
+
+.hero_img_container .settings {
+  height: 50px;
+  width: 50px;
+  right: 18%;
+  bottom: 10%;
+}
+
+.hero_img_container .block {
+  height: 80px;
+  width: 80px;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1165px) {
+  .hero_img_container > .person_img {
+    width: 96%;
+    height: 96%;
+  }
+}
+
+@media (max-width: 1112px) {
+  .hero_img_container {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 980px) {
+  .hero_img_container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero_img_container {
+    width: 300px;
+    height: 300px;
+    left: 0;
+  }
+  .hero_img_container > .main_img {
+    position: unset;
+  }
+
+  .hero_img_container > .person_img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero_img_container .img_below {
+    height: 95px;
+    width: 95px;
+  }
+
+  .chat_screen {
+    bottom: -8%;
+    left: 10%;
+  }
+
+  .hero_img_container .code {
+    height: 95px;
+    width: 50px;
+    left: 0%;
+    bottom: 8%;
+  }
+
+  .hero_img_container .tools {
+    height: 50px;
+    width: 50px;
+    left: 5%;
+    bottom: 27%;
+  }
+
+  .hero_img_container .curly_brackets {
+    width: 30px;
+    height: 50px;
+    top: 35%;
+    left: -15%;
+  }
+
+  .hero_img_container .cross {
+    width: 30px;
+    height: 50px;
+    left: 20%;
+    top: 10%;
+  }
+
+  .hero_img_container .array {
+    width: 40px;
+    height: 50px;
+    right: -10%;
+  }
+
+  .hero_img_container .screen {
+    width: 100px;
+    height: 100px;
+    right: -20%;
+  }
+
+  .hero_img_container .settings {
+    height: 40px;
+    width: 40px;
+    right: 10%;
+  }
+
+  .hero_img_container .block {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media(max-width: 750px) {
+  .hero_img_container {
+    display: none;
+  }
+}
+
+@media (max-width: 745px) {
+  .hero_img_container {
+    width: 250px;
+    height: 250px;
+  }
+  .hero_img_container > .main_img {
+    position: unset;
+  }
+
+  .hero_img_container .code {
+    height: 30px;
+    width: 50px;
+    left: 0%;
+    bottom: 18%;
+  }
+
+  .hero_img_container .chat_screen {
+    height: 60px;
+    width: 70px;
+    left: 13%;
+    bottom: -2%;
+  }
+
+  .hero_img_container .tools {
+    height: 40px;
+    width: 50px;
+    left: 5%;
+    bottom: 27%;
+  }
+
+  .hero_img_container .curly_brackets,
+  .hero_img_container .cross {
+    width: 25px;
+    height: 50px;
+  }
+
+  .hero_img_container .array {
+    width: 30px;
+    height: 50px;
+  }
+
+  .hero_img_container .screen {
+    width: 80px;
+    height: 80px;
+    right: -20%;
+  }
+
+  .hero_img_container .settings {
+    height: 35px;
+    width: 35px;
+    right: 8%;
+  }
+
+  .hero_img_container .block {
+    height: 45px;
+    width: 45px;
+  }
+  .hero_img_container .screen,
+  .hero_img_container .array,
+  .hero_img_container .block {
+      right: 0;
+  }
+}
+
+@media (max-width: 350px) {
+    
+    .hero_img_container .screen {
+      width: 60px;
+      height: 60px;
+    }
+}
