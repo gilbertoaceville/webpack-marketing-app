@@ -28,7 +28,7 @@ export const mailer = async (e, element) => {
     await toast.promise(
       emailjs.sendForm(
         process.env.REACT_APP_SERVICE_KEY,
-        process.env.REACT_APP_TEMPLATE_KEY,
+        "template_sbddz4t",
         e.target,
         process.env.REACT_APP_USER_KEY
       ),
